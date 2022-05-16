@@ -1,5 +1,5 @@
 import React from "react";
-import {Box,Input,Container,InputGroup,InputRightElement,Button} from "@chakra-ui/react";
+import {Box,Input,Container,InputGroup,InputRightElement,Button,useToast} from "@chakra-ui/react";
 import { IoIosArrowForward } from "react-icons/io";
 import { Link } from "react-router-dom";
 
@@ -7,6 +7,10 @@ const Login = () => {
 
         const [show, setShow] = React.useState(false)
         const handleClick = () => setShow(!show)
+        const toast = useToast({
+            position: 'top'
+        })
+        
 
     return ( 
         <>
@@ -29,7 +33,21 @@ const Login = () => {
                             </Button>
                         </InputRightElement>
                         </InputGroup>
-                        <Button mt="3" w="100%"color="white" rightIcon={<IoIosArrowForward />}  bg="black">
+                        <Button mt="3"
+                                w="100%"
+                                color="white" 
+                                rightIcon={<IoIosArrowForward />} 
+                                bg="black"
+                                onClick={() =>
+                                    toast({
+                                      title: 'Success !',
+                                      description: "You have successfully logged in.",
+                                      status: 'success',
+                                      duration: 9000,
+                                      isClosable: true,
+                                      position : 'top'
+                                    })
+                                  }>
                             Log in
                         </Button>
                         <Box fontSize="15" fontWeight="700" mt="4" display="flex" justifyContent="center">Forgot Password ?</Box>

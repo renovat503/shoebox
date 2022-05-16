@@ -1,5 +1,5 @@
 import React from "react";
-import {Box,Input,Container,InputGroup,InputRightElement,Button,Checkbox, extendTheme} from "@chakra-ui/react";
+import {Box,Input,Container,InputGroup,InputRightElement,Button,Checkbox, useToast} from "@chakra-ui/react";
 import { IoIosArrowForward } from "react-icons/io";
 import { Link } from "react-router-dom";
   
@@ -8,6 +8,7 @@ const Register = () => {
 
     const [show, setShow] = React.useState(false)
     const handleClick = () => setShow(!show)
+    const toast = useToast()
 
     return ( 
         <>
@@ -43,7 +44,20 @@ const Register = () => {
                             </Button>
                         </InputRightElement>
                         </InputGroup>
-                        <Button mt="3" w="100%"color="white" rightIcon={<IoIosArrowForward />}  bg="black">
+                        <Button mt="3"
+                                w="100%"color="white"
+                                rightIcon={<IoIosArrowForward />} 
+                                bg="black"
+                                onClick={() =>
+                                    toast({
+                                      title: 'Account created.',
+                                      description: "Thanks for joining shoebox.",
+                                      status: 'success',
+                                      duration: 9000,
+                                      isClosable: true,
+                                      position : 'top'
+                                    })
+                                  }>
                             Sign up
                         </Button>
                         <Box mt="4" display="flex" justifyContent="center">
