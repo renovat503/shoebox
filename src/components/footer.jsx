@@ -5,7 +5,7 @@ import { BiShoppingBag } from 'react-icons/bi';
 const Navigation = () => {
     return ( 
         <React.Fragment>
-            <Container mt="60" paddingBottom="10px" bg="gray.100" maxW="xxl">
+            <Container className="footer" paddingBottom="10px" bg="gray.100" maxW="xxl">
                 <Container maxW="container.xl">
                     <Box display="flex" justifyContent="space-between">
                     <Box mt="4" fontSize="12" fontWeight="200">© 2022 ShoeBox. All rights reserved</Box>

@@ -11,7 +11,7 @@ const Register = () => {
 
     return ( 
         <>
-        <Container minH="320px" maxW="container.lg">
+        <Container h="100vh" maxW="container.lg">
             <Box  mt="40" display="flex" justifyContent="center" >
                 <Box mt="15"maxW="400">
                     <Box fontSize="35" fontWeight="800" display="flex" justifyContent="center">Join ShoeBox today </Box>

@@ -6,7 +6,7 @@ const Landing = () => {
     return ( 
         <>
         <Container maxW="container.lg">
-            <div class="container cont">
+            <div className="container cont">
                 <div class="row">
                     <div class="col">
                         <Box mt="20">
