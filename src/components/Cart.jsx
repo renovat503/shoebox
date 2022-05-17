@@ -18,13 +18,16 @@ const Cart = () => {
 
     return ( 
         <>
-        <Container height="100vh" maxW="container.xl">
+        <Container height="100%" mb="3" maxW="container.xl">
             <div className="row">
                 <div className="col">
             <Box bg="gray.100" padding="3" mt="2" borderRadius="8">
             <Heading as='h5' size='sm'>
                 Cart
             </Heading>
+            <ProductInCart/>
+            <ProductInCart/>
+            <ProductInCart/>
             <ProductInCart/>
             <ProductInCart/>
             <ProductInCart/>
