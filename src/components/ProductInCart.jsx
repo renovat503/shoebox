@@ -17,9 +17,9 @@ const ProductInCart = () => {
                     </Box>
                     <Box display="flex" mt="1">
                         <Box color="gray.400" fontSize="12" >$120.99</Box>
-                        <Badge borderRadius="6"ml="3" variant='subtle' colorScheme='green'><Text fontSize="10" mt="0.5">in stock</Text></Badge>
+                        <Badge borderRadius="6"ml="3" variant='subtle' colorScheme='red'><Text fontSize="10" mt="0.5">Out of stock</Text></Badge>
                     </Box>
-                    <Box display="flex" mt="2">
+                    <Box display="flex" mt="2" justifyContent="space-between">
                     <Box display="flex"w="50%">
                         <Select variant='outline' placeholder='size' size="xs" borderRadius="8"w="40">
                             <option value='option1'>XL</option>
@@ -37,11 +37,9 @@ const ProductInCart = () => {
                             <option value='option3'>4</option>
                         </Select>  
                     </Box>
-                    <Box display="flex" color="gray.400" ml="20" >
-                        <Box mt="1"><FaHeart size="15"/></Box>
-                        <Text ml="1">Save</Text>
-                        <Box ml="3"><AiFillDelete ml="2" size="20"/></Box>
-                        <Text ml="1">Delete</Text>
+                    <Box display="flex" color="gray.400" ml="20" mt="2" >
+                        <Box ml="3" mt="1"><AiFillDelete ml="2" size="16"/></Box>
+                        <Text ml="1" fontSize="16">Delete</Text>
                     </Box>
                     </Box>
                 </Box>
