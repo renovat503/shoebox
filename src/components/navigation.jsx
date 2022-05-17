@@ -13,7 +13,7 @@ const Navigation = () => {
                     <Box display="flex" mt="3">
                     <Link to="/Login"><Button size="sm"mr="25px" colorScheme='black' variant='outline'>Login</Button></Link>
                         <div className="cart">
-                            <BiShoppingBag color="White"/>
+                           <Link to="/Cart"><BiShoppingBag color="White"/></Link>
                         </div>
                     </Box>
                     </Box>
