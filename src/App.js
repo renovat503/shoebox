@@ -6,6 +6,7 @@ import Footer from "./components/footer";
 import Cart from "./components/Cart";
 import { Route, Routes } from 'react-router-dom';
 import "./App.css";
+
 function App() {
   return (
     <div className="App">

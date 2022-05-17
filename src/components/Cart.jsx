@@ -3,25 +3,12 @@ import { useNumberInput } from "@chakra-ui/react";
 import ProductInCart from "./ProductInCart";
 const Cart = () => {
 
-    const { getInputProps, getIncrementButtonProps, getDecrementButtonProps } =
-    useNumberInput({
-      step: 1,
-      defaultValue: 1,
-      min: 1,
-      max: 12,
-      precision: 0,
-    })
-
-  const inc = getIncrementButtonProps()
-  const dec = getDecrementButtonProps()
-  const input = getInputProps()
-
     return ( 
         <>
         <Container height="100%" mb="3" maxW="container.xl">
             <div className="row">
                 <div className="col">
-            <Box bg="gray.100" padding="3" mt="2" borderRadius="8">
+            <Box bg="white" padding="3" mt="2" borderRadius="8">
             <Heading as='h5' size='sm'>
                 Cart
             </Heading>
@@ -34,7 +21,7 @@ const Cart = () => {
             </Box>
             </div>
             <div className="col">
-                <Box bg="gray.100" mt="2" borderRadius="5" p="5">
+                <Box bg="white" mt="2" borderRadius="5" p="5">
                   <Box color="gray.400" fontSize="18">Delivery</Box>
                   <Switch size='md' />
                   <Box mt="2" fontSize="14" color="gray.400">Delivery date : June 24,2022</Box>
