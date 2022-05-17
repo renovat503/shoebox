@@ -11,7 +11,7 @@ const ProductInCart = () => {
                     <Image src={bottle} w="85px" h="100px" borderRadius="7"/>
                 </Box>
                 <Box w="80%">
-                    <Box bg="white" display="flex" justifyContent="space-between">
+                    <Box  display="flex" justifyContent="space-between">
                         <Box fontWeight="600" fontSize="18" color="gray.500">Offwhite Blue Jordan One </Box>
                         <Box fontWeight="600" color="gray.800">$120.99</Box>
                     </Box>
