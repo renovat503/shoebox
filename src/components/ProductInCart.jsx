@@ -1,6 +1,5 @@
 import {Box,Divider,Image,Badge,Select,Text} from "@chakra-ui/react";
 import bottle from '../assets/bottle.jpg';
-import { FaHeart } from 'react-icons/fa';
 import { AiFillDelete } from 'react-icons/ai';
 const ProductInCart = () => {
     return ( 
