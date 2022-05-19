@@ -1,4 +1,5 @@
 import { Button ,Container,Box,Image} from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 import { IoIosArrowForward } from "react-icons/io";
 import Offwhite from "../assets/offwhiteblue.jpg";
 import '../styles/landing.css';
@@ -16,9 +17,9 @@ const Landing = () => {
                                 newest styles & innovation, free shipping, 
                                 birthday rewards and more.</Box>
                             <Box mt="10">
-                                <Button color="white" rightIcon={<IoIosArrowForward />}  bg="black">
+                              <Link to="/shop"><Button color="white" rightIcon={<IoIosArrowForward />}  bg="black">
                                     Shop Now
-                                </Button>
+                                </Button></Link>
                             </Box>
                         </Box>
                     </div>

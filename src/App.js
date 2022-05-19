@@ -6,6 +6,7 @@ import Footer from "./components/footer";
 import Cart from "./components/Cart";
 import { Route, Routes } from 'react-router-dom';
 import "./App.css";
+import ShopNow from './components/ShopNow';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/shop" element={<ShopNow />} />
         </Routes>
       </div>
       <Footer/>
