@@ -8,8 +8,8 @@ const Landing = () => {
         <>
         <Container maxW="container.lg">
             <div className="container cont">
-                <div class="row">
-                    <div class="col">
+                <div className="row">
+                    <div className="col">
                         <Box mt="20">
                             <Box fontSize="100" lineHeight="1" fontWeight="600">Classic Sneakers</Box>
                             <Box mt="5" fontSize="14" w="400px">Things are better as a Shoebox Member.
@@ -23,7 +23,7 @@ const Landing = () => {
                             </Box>
                         </Box>
                     </div>
-                    <div class="col">
+                    <div className="col">
                         <Box mt="20" minW="300px" w="100%">
                             <Image src={Offwhite}/>
                         </Box>

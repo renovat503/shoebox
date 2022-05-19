@@ -1,5 +1,4 @@
-import {Container,Box,Heading,Divider,Image,Badge,Select,Input,Button,Text,Switch} from "@chakra-ui/react";
-import { useNumberInput } from "@chakra-ui/react";
+import {Container,Box,Heading,Divider,Button,Text,Switch} from "@chakra-ui/react";
 import ProductInCart from "./ProductInCart";
 const Cart = () => {
 
