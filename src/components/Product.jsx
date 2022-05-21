@@ -5,7 +5,7 @@ const Product = () => {
     return ( 
         <>
                     <div className="col margintwo" >
-                        <Box p="2" mt="2" mb="4" borderRadius="7" w="30%" minW="300px" h="95%" bg="white">
+                        <Box p="2" mt="2" mb="4" borderRadius="7" maxW="450px" minW="312px" h="95%" bg="white">
                             <Image src={blackair} borderRadius="7"/>
                             <Box mt="2"><Text fontWeight="500" fontSize="14">Off-White x Nike AF1 Low "MoMa" </Text></Box>
                             <Box mt="0.5" display="flex">
