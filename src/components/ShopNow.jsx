@@ -4,7 +4,7 @@ import Product from "./Product";
 const ShopNow = () => {
     return ( 
         <>
-        <Container height="100%" mb="3" maxW="container.lg">
+        <Container height="100%" mb="3" mt="3" maxW="container.lg">
             <div className="row">
                     <Product/>
                     <Product/>
@@ -12,6 +12,7 @@ const ShopNow = () => {
                     <Product/>
                     <Product/>
                     <Product/> 
+                    <Product/>
                     <Product/>
             </div>      
         </Container>

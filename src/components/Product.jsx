@@ -1,11 +1,13 @@
 import { Box,Container ,Image,Text,Badge} from "@chakra-ui/react";
 import blackair from "../assets/blackair.jpeg";
 import { TiStarFullOutline } from 'react-icons/ti';
+import { FiHeart } from 'react-icons/fi';
 const Product = () => {
     return ( 
         <>
                     <div className="col margintwo" >
-                        <Box p="2" mt="2" mb="4" borderRadius="7" maxW="450px" minW="312px" h="95%" bg="white">
+                        <Box p="2" mt="2" mb="4" borderRadius="7" minW="312px" h="95%" bg="white" position="relative">
+                            <Box zIndex="2" right="3" top="4" position="absolute" ><FiHeart /></Box>
                             <Image src={blackair} borderRadius="7"/>
                             <Box mt="2"><Text fontWeight="500" fontSize="14">Off-White x Nike AF1 Low "MoMa" </Text></Box>
                             <Box mt="0.5" display="flex">
