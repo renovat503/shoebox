@@ -61,10 +61,7 @@ const Product = () => {
                         <ModalBody>
                             <div className='row'>
                         <div className="col margintwo" >
-                            <Box p="2" mt="2" mb="4" borderRadius="7" minW="312px" h="95%" bg="white" position="relative">
-                                <Box zIndex="2" right="3" top="4" position="absolute"></Box>
-                                <Image src={blackair} borderRadius="7"/>
-                            </Box>
+                                <Image minW="300px" src={blackair}/>
                         </div>
                         <div className="col margintwo" >
                             <Box p="2" mt="2" mb="4" borderRadius="7" minW="312px" h="95%" bg="white" position="relative">
@@ -81,40 +78,48 @@ const Product = () => {
                                     <AccordionItem>
                                         <h2>
                                         <AccordionButton>
-                                            <Box flex='1' textAlign='left'>
+                                            <Box flex='1' textAlign='left' fontSize={14} color="black"fontWeight={600}>
                                             Size
                                             </Box>
                                             <AccordionIcon />
                                         </AccordionButton>
                                         </h2>
                                         <AccordionPanel pb={4}>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                        commodo consequat.
+                                             <Button w="80px"color="white" bg="black" mr="2"size="xs" colorScheme='' variant="outline">7W / 8.5 M</Button>
+                                             <Button w="80px"  mr="2"size="xs" colorScheme='' variant="outline">7.5W / 9 M</Button>
+                                             <Button w="40px"color="white" bg="black" mr="2"size="xs" colorScheme='' variant="outline">7.5</Button>
+                                             <Button w="40px"color="white" bg="black" mr="2"size="xs" colorScheme='' variant="outline">8</Button>
+                                             <Button w="40px"color="white" bg="black" mr="2"size="xs" colorScheme='' variant="outline">8.5</Button>
+                                             <Button w="40px"color="white" bg="black" mr="2"size="xs" colorScheme='' variant="outline">9</Button>
+                                             <Button w="40px"color="white" bg="black" mr="2"size="xs" colorScheme='' variant="outline">9.5</Button>
+                                             <Button w="40px"color="white" bg="black" mr="2"size="xs" colorScheme='' variant="outline">10</Button>
+                                             <Button w="40px"color="white" bg="black" mr="2"size="xs" colorScheme='' variant="outline">10.5</Button>
+                                             <Button w="40px"color="white" bg="black" mr="2"size="xs" colorScheme='' variant="outline">11</Button>
+                                             
                                         </AccordionPanel>
                                     </AccordionItem>
 
                                     <AccordionItem>
                                         <h2>
                                         <AccordionButton>
-                                            <Box flex='1' textAlign='left'>
+                                            <Box flex='1' textAlign='left'fontSize={14}color="black" fontWeight={600}>
                                             Color
                                             </Box>
                                             <AccordionIcon />
                                         </AccordionButton>
                                         </h2>
                                         <AccordionPanel pb={4}>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                        commodo consequat.
+                                            <Box display="flex">
+                                                <Box borderRadius="50%"  w="30px" h="30px" bg="black" ml={2}/>
+                                                <Box borderRadius="50%"  w="30px" h="30px" bg="green" ml={2}/>
+                                                <Box borderRadius="50%"  w="30px" h="30px" bg="blue" ml={2}/>
+                                            </Box>
                                         </AccordionPanel>
                                     </AccordionItem>
                                     <AccordionItem>
                                         <h2>
                                         <AccordionButton>
-                                            <Box flex='1' textAlign='left'>
+                                            <Box flex='1' textAlign='left'fontSize={14}color="black"fontWeight={600}>
                                             Description
                                             </Box>
                                             <AccordionIcon />
@@ -130,7 +135,7 @@ const Product = () => {
                                     <AccordionItem>
                                         <h2>
                                         <AccordionButton>
-                                            <Box flex='1' textAlign='left'>
+                                            <Box flex='1' textAlign='left'fontSize={14}color="black"fontWeight={600}>
                                             Delivery & return
                                             </Box>
                                             <AccordionIcon />
