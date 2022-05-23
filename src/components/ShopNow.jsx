@@ -1,4 +1,4 @@
-import { Container,Box } from "@chakra-ui/react";
+import { Container } from "@chakra-ui/react";
 import "../styles/shopnow.css";
 import Product from "./Product";
 const ShopNow = () => {
@@ -14,7 +14,7 @@ const ShopNow = () => {
                     <Product/> 
                     <Product/>
                     <Product/>
-            </div>      
+            </div>     
         </Container>
         </>
      );
