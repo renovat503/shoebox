@@ -8,11 +8,25 @@ import {
     ModalCloseButton,useDisclosure
   } from '@chakra-ui/react';
 import { Box,Container,Button ,Image,Text,Badge} from "@chakra-ui/react";
+import { useToast } from '@chakra-ui/react'
 import blackair from "../assets/blackair.jpeg";
 import { TiStarFullOutline } from 'react-icons/ti';
 import { AiFillPlusCircle } from 'react-icons/ai';
 const Product = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
+    const toast = useToast()
+
+    function handleAddToCart(){
+        onClose();
+        toast({
+            title: 'Success ',
+            description: "Product added to cart.",
+            status: 'success',
+            duration: 9000,
+            isClosable: true,
+            position : 'top',
+          })
+    }
     
     return ( 
         <>
@@ -36,11 +50,11 @@ const Product = () => {
                         <ModalOverlay />
                         <ModalContent>
                         <ModalHeader>Prodcut Details</ModalHeader>
-                        <ModalCloseButton />
+                        <ModalCloseButton bg="black" color="white"/>
                         <ModalBody>
                         <div className="col margintwo" >
                         <Box p="2" mt="2" mb="4" borderRadius="7" minW="312px" h="95%" bg="white" position="relative">
-                            <Box zIndex="2" right="3" top="4" position="absolute"><AiFillPlusCircle onClick={onOpen}/></Box>
+                            <Box zIndex="2" right="3" top="4" position="absolute"></Box>
                             <Image src={blackair} borderRadius="7"/>
                             <Box mt="2"><Text fontWeight="500" fontSize="14">Off-White x Nike AF1 Low "MoMa" </Text></Box>
                             <Box mt="0.5" display="flex">
@@ -56,7 +70,7 @@ const Product = () => {
                         </ModalBody>
 
                         <ModalFooter>
-                            <Button  bg="black"colorScheme="blackAlpha">Add to Cart</Button>
+                            <Button  bg="black"colorScheme="blackAlpha" onClick={handleAddToCart}>Add to Cart</Button>
                         </ModalFooter>
                         </ModalContent>
                     </Modal>
