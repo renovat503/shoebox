@@ -1,15 +1,16 @@
-import { Box,Container ,Image,Text,Badge} from "@chakra-ui/react";
+import { Box,Container ,Image,Text,Badge,useToast, propNames} from "@chakra-ui/react";
 import blackair from "../assets/blackair.jpeg";
 import { TiStarFullOutline } from 'react-icons/ti';
 import { FiHeart } from 'react-icons/fi';
-const Product = () => {
-    return ( 
+
+const Product = (props) => {
+    return (
         <>
                     <div className="col margintwo" >
                         <Box p="2" mt="2" mb="4" borderRadius="7" minW="312px" h="95%" bg="white" position="relative">
-                            <Box zIndex="2" right="3" top="4" position="absolute" ><FiHeart /></Box>
-                            <Image src={blackair} borderRadius="7"/>
-                            <Box mt="2"><Text fontWeight="500" fontSize="14">Off-White x Nike AF1 Low "MoMa" </Text></Box>
+                            <Box zIndex="2" right="3" top="4" position="absolute" ><FiHeart/></Box>
+                            <Image src={props.image} borderRadius="7"/>
+                            <Box mt="2"><Text fontWeight="500" fontSize="14">{props.name}</Text></Box>
                             <Box mt="0.5" display="flex">
                                 <Text fontWeight="500" color="gray.500" fontSize="14">$119.99</Text>
                                 <Badge fontSize="9" colorScheme="green" ml="2"><Text mt="1">in stock</Text></Badge>
